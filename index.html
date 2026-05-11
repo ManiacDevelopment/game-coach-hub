@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Coach Hub</title>
+
+  <style>
+    body{
+      margin:0;
+      background:#0d0b10;
+      color:#f6ead8;
+      font-family:Arial,sans-serif;
+      line-height:1.7;
+    }
+
+    .wrap{
+      max-width:1150px;
+      margin:auto;
+      padding:40px 22px;
+    }
+
+    .hero{
+      padding:70px 0;
+      text-align:center;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#d9a13d;
+      color:#140a04;
+      padding:7px 14px;
+      border-radius:999px;
+      font-weight:bold;
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-size:clamp(42px,7vw,82px);
+      line-height:.95;
+      margin:0 0 18px;
+      color:#fff0d0;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      max-width:720px;
+      margin:auto;
+      color:#c9b8a2;
+      font-size:18px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:linear-gradient(180deg,#1d151f,#120d15);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:26px;
+      padding:26px;
+      min-height:280px;
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+      transition:.2s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      border-color:#d9a13d;
+    }
+
+    .icon{
+      font-size:42px;
+      margin-bottom:14px;
+    }
+
+    h2{
+      color:#d9a13d;
+      margin:0 0 10px;
+      font-size:30px;
+    }
+
+    .card p{
+      color:#c9b8a2;
+      margin-bottom:22px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#d9a13d;
+      color:#140a04;
+      padding:12px 18px;
+      border-radius:14px;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    .soon{
+      opacity:.55;
+    }
+
+    .footer{
+      margin-top:70px;
+      padding-top:24px;
+      border-top:1px solid rgba(255,255,255,.12);
+      color:#9f8f7c;
+      text-align:center;
+      font-size:14px;
+    }
+
+    @media(max-width:760px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero{
+        padding:45px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="badge">Game Guides · Coaches · Tools</div>
+
+    <h1>Game Coach Hub</h1>
+
+    <p>
+      One place for all my game guides, coach tools, builds, trackers,
+      calculators and progression helpers.
+    </p>
+  </section>
+
+  <section class="grid">
+
+    <article class="card">
+      <div class="icon">🤠</div>
+      <h2>Red Dead Online Guide</h2>
+
+      <p>
+        Complete Red Dead Online guide with money farming, gold farming,
+        weapons, roles, ability cards, trackers, calculators and maps.
+      </p>
+
+      <a class="btn" href="https://red-dead-online-guide.vercel.app/" target="_blank">
+        Open Guide
+      </a>
+    </article>
+
+    <article class="card">
+      <div class="icon">🎮</div>
+      <h2>Deadlock Coach</h2>
+
+      <p>
+        Deadlock coach and helper site with hero guides, builds,
+        strengths, weaknesses and player tools.
+      </p>
+
+      <a class="btn" href="https://deadlock-coach-ten.vercel.app/" target="_blank">
+        Open Coach
+      </a>
+    </article>
+
+    <article class="card soon">
+      <div class="icon">➕</div>
+      <h2>Next Game Guide</h2>
+
+      <p>
+        Placeholder for your next guide or coach project.
+        This can be replaced with any future game.
+      </p>
+
+      <a class="btn" href="#">
+        Coming Soon
+      </a>
+    </article>
+
+    <article class="card soon">
+      <div class="icon">🧰</div>
+      <h2>Tools & Calculators</h2>
+
+      <p>
+        Future shared tools such as build planners, tier lists,
+        trackers and calculators across different games.
+      </p>
+
+      <a class="btn" href="#">
+        Coming Soon
+      </a>
+    </article>
+
+  </section>
+
+  <footer class="footer">
+    Game Coach Hub — fan-made guides and tools.
+  </footer>
+
+</div>
+
+</body>
+</html>
