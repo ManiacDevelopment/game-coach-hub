@@ -6,6 +6,7 @@
   <title>Game Coach Hub</title>
 
   <style>
+
     body{
       margin:0;
       background:#0d0b10;
@@ -15,13 +16,13 @@
     }
 
     .wrap{
-      max-width:1150px;
+      max-width:1200px;
       margin:auto;
       padding:40px 22px;
     }
 
     .hero{
-      padding:70px 0;
+      padding:80px 0 60px;
       text-align:center;
     }
 
@@ -29,31 +30,31 @@
       display:inline-block;
       background:#d9a13d;
       color:#140a04;
-      padding:7px 14px;
+      padding:8px 16px;
       border-radius:999px;
       font-weight:bold;
-      margin-bottom:18px;
+      margin-bottom:20px;
     }
 
     h1{
-      font-size:clamp(42px,7vw,82px);
+      font-size:clamp(42px,7vw,84px);
       line-height:.95;
-      margin:0 0 18px;
+      margin:0 0 20px;
       color:#fff0d0;
       text-transform:uppercase;
     }
 
     .hero p{
-      max-width:720px;
+      max-width:760px;
       margin:auto;
       color:#c9b8a2;
-      font-size:18px;
+      font-size:19px;
     }
 
     .grid{
       display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:22px;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:24px;
       margin-top:40px;
     }
 
@@ -61,50 +62,65 @@
       background:linear-gradient(180deg,#1d151f,#120d15);
       border:1px solid rgba(255,255,255,.12);
       border-radius:26px;
-      padding:26px;
-      min-height:280px;
+      padding:28px;
+      min-height:300px;
       box-shadow:0 18px 60px rgba(0,0,0,.35);
       transition:.2s ease;
+      display:flex;
+      flex-direction:column;
     }
 
     .card:hover{
-      transform:translateY(-5px);
+      transform:translateY(-6px);
       border-color:#d9a13d;
     }
 
     .icon{
-      font-size:42px;
+      font-size:48px;
       margin-bottom:14px;
     }
 
     h2{
       color:#d9a13d;
-      margin:0 0 10px;
+      margin:0 0 12px;
       font-size:30px;
     }
 
     .card p{
       color:#c9b8a2;
-      margin-bottom:22px;
+      flex:1;
     }
 
     .btn{
       display:inline-block;
       background:#d9a13d;
       color:#140a04;
-      padding:12px 18px;
+      padding:13px 18px;
       border-radius:14px;
       font-weight:bold;
       text-decoration:none;
+      transition:.2s ease;
+    }
+
+    .btn:hover{
+      opacity:.9;
+      transform:scale(1.02);
     }
 
     .soon{
       opacity:.55;
     }
 
-    .footer{
+    .section-title{
       margin-top:70px;
-      padding-top:24px;
+      margin-bottom:20px;
+      color:#fff0d0;
+      font-size:36px;
+    }
+
+    .footer{
+      margin-top:80px;
+      padding-top:30px;
       border-top:1px solid rgba(255,255,255,.12);
       color:#9f8f7c;
       text-align:center;
@@ -112,14 +128,17 @@
     }
 
     @media(max-width:760px){
+
+      .hero{
+        padding:50px 0 40px;
+      }
+
       .grid{
         grid-template-columns:1fr;
       }
 
-      .hero{
-        padding:45px 0;
-      }
     }
+
   </style>
 </head>
 
@@ -128,78 +147,153 @@
 <div class="wrap">
 
   <section class="hero">
-    <div class="badge">Game Guides · Coaches · Tools</div>
+
+    <div class="badge">
+      Game Guides · Coaches · Tools
+    </div>
 
     <h1>Game Coach Hub</h1>
 
     <p>
-      One place for all my game guides, coach tools, builds, trackers,
-      calculators and progression helpers.
+      One place for all my game guides, survival tools,
+      progression systems, calculators, builds and gaming helpers.
     </p>
+
   </section>
+
+  <h2 class="section-title">Current Projects</h2>
 
   <section class="grid">
 
     <article class="card">
+
       <div class="icon">🤠</div>
+
       <h2>Red Dead Online Guide</h2>
 
       <p>
-        Complete Red Dead Online guide with money farming, gold farming,
-        weapons, roles, ability cards, trackers, calculators and maps.
+        Complete Red Dead Online guide with money farming,
+        gold farming, weapons, roles, builds, trackers,
+        calculators and maps.
       </p>
 
-      <a class="btn" href="https://red-dead-online-guide.vercel.app/" target="_blank">
-        Open Guide
+      <a class="btn"
+         href="https://red-dead-online-guide.vercel.app/"
+         target="_blank">
+         Open Guide
       </a>
+
     </article>
 
     <article class="card">
+
       <div class="icon">🎮</div>
+
       <h2>Deadlock Coach</h2>
 
       <p>
-        Deadlock coach and helper site with hero guides, builds,
-        strengths, weaknesses and player tools.
+        Deadlock coach and helper site with hero guides,
+        builds, strengths, weaknesses and future player tools.
       </p>
 
-      <a class="btn" href="https://deadlock-coach-ten.vercel.app/" target="_blank">
-        Open Coach
+      <a class="btn"
+         href="https://deadlock-coach-ten.vercel.app/"
+         target="_blank">
+         Open Coach
       </a>
+
+    </article>
+
+    <article class="card">
+
+      <div class="icon">☣️</div>
+
+      <h2>DayZ Survival Guide</h2>
+
+      <p>
+        DayZ survival guide with beginner tips, illness help,
+        loot routes, weapons, PvP, base building,
+        vehicles and map guidance.
+      </p>
+
+      <a class="btn"
+         href="https://dayz-survival-guide.vercel.app/"
+         target="_blank">
+         Open Guide
+      </a>
+
     </article>
 
     <article class="card soon">
+
       <div class="icon">➕</div>
+
       <h2>Next Game Guide</h2>
 
       <p>
-        Placeholder for your next guide or coach project.
-        This can be replaced with any future game.
+        Placeholder for future survival games,
+        RPG guides, strategy tools or new coach systems.
       </p>
 
       <a class="btn" href="#">
         Coming Soon
       </a>
+
+    </article>
+
+  </section>
+
+  <h2 class="section-title">Planned Features</h2>
+
+  <section class="grid">
+
+    <article class="card soon">
+
+      <div class="icon">🧰</div>
+
+      <h2>Shared Tools</h2>
+
+      <p>
+        Shared calculators, progression planners,
+        trackers and interactive gaming tools across all guides.
+      </p>
+
     </article>
 
     <article class="card soon">
-      <div class="icon">🧰</div>
-      <h2>Tools & Calculators</h2>
+
+      <div class="icon">📈</div>
+
+      <h2>Community Features</h2>
 
       <p>
-        Future shared tools such as build planners, tier lists,
-        trackers and calculators across different games.
+        Future Discord integration, user builds,
+        rankings and community submissions.
       </p>
 
-      <a class="btn" href="#">
-        Coming Soon
-      </a>
+    </article>
+
+    <article class="card soon">
+
+      <div class="icon">🗺️</div>
+
+      <h2>Interactive Maps</h2>
+
+      <p>
+        Advanced live maps, loot tracking,
+        collectible systems and route optimization.
+      </p>
+
     </article>
 
   </section>
 
   <footer class="footer">
-    Game Coach Hub — fan-made guides and tools.
+
+    <p>
+      Game Coach Hub — fan-made gaming guides and tools.
+    </p>
+
   </footer>
 
 </div>
